@@ -22,8 +22,7 @@ public class LocalStorageService {
             String fileName = photo.getOriginalFilename();
             Path filePath = Paths.get(uploadDir + File.separator + fileName);
             Files.copy(photo.getInputStream(), filePath);
-            return "/images/" + fileName;
-            // return filePath.toString(); // Mengembalikan path file yang disimpan
+            return fileName;
 
         } catch (IOException e) {
             e.printStackTrace();

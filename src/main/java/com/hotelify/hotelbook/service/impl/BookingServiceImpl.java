@@ -153,4 +153,5 @@ private boolean roomIsAvailable(Booking bookingRequest, List<Booking> existingBo
                             && bookingRequest.getCheckOutDate().equals(bookingRequest.getCheckInDate()))
             );
 }
+
 }

@@ -8,4 +8,5 @@ public interface BookingService {
     Response findBookingByConfirmationCode(String confirmationCode);
     Response getAllBookings();
     Response cancelBooking(Long bookingId);
+    //  Booking findById(Long id);
 }
